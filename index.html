@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenBite • Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="theme-color" content="#2a8757">
+</head>
+<body>
+
+<!-- header -->
+<header class="header">
+  <a class="logo" href="index.html">GreenBite</a>
+  <nav id="site-nav" class="nav">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="workout.html">Workout</a>
+    <a href="mindfulness.html">Mindfulness</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="hero card">
+    <h1>Eat well. Move daily. Breathe deeply.</h1>
+    <p id="hero-quote">Healthy inside, happy outside.</p>
+    <a class="btn" href="recipes.html">Explore Recipes</a>
+  </section>
+
+  <section class="card">
+    <h2>Tip of the Day</h2>
+    <p id="daily-tip">Loading…</p>
+  </section>
+
+  <section class="grid two">
+    <article class="card"><h3>Healthy Recipes</h3><p>Balanced meals with clear nutrition.</p><a class="link" href="recipes.html">Browse →</a></article>
+    <article class="card"><h3>Calorie & Nutrition</h3><p>BMR, TDEE and macros.</p><a class="link" href="calculator.html">Calculate →</a></article>
+    <article class="card"><h3>Workout Generator</h3><p>Random plans with a timer.</p><a class="link" href="workout.html">Build →</a></article>
+    <article class="card"><h3>Mindfulness</h3><p>Breathing, timer, ambient sounds.</p><a class="link" href="mindfulness.html">Start →</a></article>
+  </section>
+</main>
+
+<footer class="site-footer card">
+  <form id="newsletter-form" class="row">
+    <label class="visually-hidden" for="nl-email">Email</label>
+    <input id="nl-email" type="email" placeholder="you@example.com" required>
+    <button class="btn">Subscribe</button>
+    <small id="nl-msg" aria-live="polite"></small>
+  </form>
+  <p class="small">© <span id="year"></span> GreenBite</p>
+</footer>
+
+<script src="java/app.js"></script>
+</body>
+</html>

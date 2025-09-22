@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GreenBite • Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">GreenBite</a>
+  <nav id="site-nav" class="nav">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="workout.html">Workout</a>
+    <a href="mindfulness.html">Mindfulness</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="card">
+    <h1>Contact & Feedback</h1>
+    <form id="contact-form" class="grid two" novalidate>
+      <label>Name<input type="text" id="c-name" required minlength="2" maxlength="60"></label>
+      <label>Email<input type="email" id="c-email" required></label>
+      <label class="full">Message<textarea id="c-msg" required minlength="10" maxlength="500"></textarea></label>
+      <button class="btn" type="submit">Send</button>
+      <p id="c-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>GreenBite HQ</h2>
+    <div class="map-wrap">
+      <iframe title="GreenBite HQ" src="https://maps.google.com/maps?q=Colombo%2C%20Sri%20Lanka&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section id="faq" class="card">
+    <h2>FAQ</h2>
+    <div class="accordion">
+      <button class="acc-btn">Is GreenBite free to use?</button>
+      <div class="acc-panel"><p>Yes. All tools on this demo are free.</p></div>
+      <button class="acc-btn">Can I save recipes?</button>
+      <div class="acc-panel"><p>Use the ⭐ button on each recipe to save to your device.</p></div>
+      <button class="acc-btn">Will it work offline?</button>
+      <div class="acc-panel"><p>This simple build works online; save the folder and open files locally anytime.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="small">© <span id="year"></span> GreenBite.</p>
+</footer>
+
+<script src="java/app.js"></script>
+</body>
+</html>

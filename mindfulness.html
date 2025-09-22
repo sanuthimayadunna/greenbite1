@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GreenBite • Mindfulness</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="index.html">GreenBite</a>
+  <nav id="site-nav" class="nav">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="calculator.html">Calculator</a>
+    <a href="workout.html">Workout</a>
+    <a href="mindfulness.html" aria-current="page">Mindfulness</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="page">
+  <section class="card">
+    <h1>Mindfulness</h1>
+    <div class="grid two">
+      <section>
+        <h2>Breathing</h2>
+        <div class="breath">
+          <div class="circle" id="breath-circle" aria-label="Breathing animation"></div>
+          <p id="breath-label">Inhale…</p>
+        </div>
+        <div class="row">
+          <button id="breath-start" class="btn">Start</button>
+          <button id="breath-stop" class="btn outline">Stop</button>
+        </div>
+      </section>
+      <section>
+        <h2>Timer</h2>
+        <label>Minutes <input type="number" id="mind-mins" value="5" min="1"></label>
+        <div class="row">
+          <button id="mind-start" class="btn">Start</button>
+          <button id="mind-stop" class="btn outline">Stop</button>
+        </div>
+        <p id="mind-status">Idle</p>
+        <p>Sessions completed: <strong id="sessions">0</strong></p>
+      </section>
+    </div>
+
+    <section class="card">
+      <h2>Ambient Sounds</h2>
+      <div class="row">
+        <button data-sound="rain" class="btn ghost sound-btn">Rain</button>
+        <button data-sound="waves" class="btn ghost sound-btn">Waves</button>
+        <button data-sound="chimes" class="btn ghost sound-btn">Chimes</button>
+        <button id="sound-off" class="btn outline">Off</button>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="small">© <span id="year"></span> GreenBite.</p>
+</footer>
+
+<script src="java/app.js"></script>
+</body>
+</html>
